@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/icon-muslim.png">
+    <title>Salati-website</title>
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <div class="image">
+                <img src="images/icon-mosque-2.png" alt="">
+            </div>
+            <div class="title">
+                <h1 id="city-name">Jijel</h1>
+            </div>
+            
+            <div class="image">
+                <img src="images/icon-mosque-2.png" alt="">
+            </div>
+        </header>
+       
+        <div class="time-content">
+            <div class="sunrise">
+                <h2 id="shuruq-time">Shuruq</h2>
+                <p class="time" id="time" >08:20</p>
+            </div>
+            <div class="date-time">
+                <div class="d-time">
+                    <h1 id="TIME">08:49:34</h1>
+                    <p class="daily-date" id="dateId">05 mas 2024</p>
+                </div>
+                <div class="pray-time">
+                    <div class="icon">
+                        <img src="images/icon-3.png" alt="Pray Time Icon">
+                    </div>
+                    <div class="rest-time-pray" style=" font-size: 3rem;color: #fff;">
+                        <p>Dhur in 3:49</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icon-3.png" alt="Pray Time Icon">
+                    </div>
+                </div>
+            </div>
+            <div class="sunrise" id="jumua">
+                <h2>Jumua</h2>
+                <p class="time">13:00</p>
+                <p class="time">14:00</p>
+            </div>
+        </div>
+        <hr class="middle-line">
+        <div class="card-content">
+            <div class="card ">
+                <h1>Fajr</h1>
+                <div class="text">
+                    <p id="fajr-time" ></p>
+                    <p>+20</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h1>Dhuhr</h1>
+                <div class="text">
+                    <p id="dhuhr-time"></p>
+                    <p>+10</p>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Asr</h1>
+                <div class="text">
+                    <p id="asr-time"></p>
+                    <p>+10</p>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Maghrib</h1>
+                <div class="text">
+                    <p id="maghrib-time"></p>
+                    <p>+5</p>
+                </div>
+            </div>
+
+            <div class="card close">
+                <h1>Isha</h1>
+                <div class="text">
+                    <p id="isha-time" class="chosenTime"></p>
+                    <p>+20</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="selection">
+            <select name="" id="select">
+               <option value="">Jijel</option>
+            </select>
+        </div>
+
+        
+        
+    </div>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

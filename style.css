@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: url(images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container{
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin: 1rem 2rem;
+    gap: 5rem;
+}
+
+.header .title{
+    padding: 1rem 3rem;
+    border-bottom: 2px solid #fff;
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.header .title h1{
+    font-size: 5rem;
+    color: #fff;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 600;
+}
+.header .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .image img{
+    width: 100%;
+}
+
+/* Container for all elements */
+.time-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjusted to ensure even spacing */
+    width: 100%;
+    padding: 20px; /* Added padding for overall spacing */
+    gap: 7rem;
+    
+}
+
+/* Text Styling */
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+/* Main Date-Time Section */
+.time-content .date-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    width: 40%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Improved color contrast */
+    padding: 1rem; /* Added padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Added shadow for depth */
+}
+
+/* Digital Clock and Date */
+.time-content .date-time .d-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(81, 0, 128, 0.4); /* Lightened background */
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Added subtle shadow */
+}
+
+.time-content .date-time .d-time h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px #000;
+    margin: 0; /* Removed default margin */
+}
+
+.time-content .date-time .d-time p {
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 6px #000;
+    padding-bottom: 1rem;
+    margin: 0; /* Removed default margin */
+}
+
+/* Prayer Time Section */
+.pray-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Better alignment */
+    padding: 1rem 0;
+    gap: 20px; /* Ensures even spacing between icons and text */
+    transform: translateY(-10%);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Rest Time for Prayer */
+.time-content .rest-time-pray {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.time-content .rest-time-pray p {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Sunrise Section */
+.time-content .sunrise {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10%); /* Adjusted positioning */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
+}
+
+.time-content .sunrise h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.time-content .sunrise p {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/* CSS */
+.middle-line {
+    border: none; /* Remove default border */
+    border-top: 2px solid #ccc; /* Customize the line's appearance */
+    width: 80%; /* Adjust width as needed */
+    margin: 2rem auto; /* Center the line and add spacing */
+    opacity: 0.7; /* Optional: Adds slight transparency */
+}
+/* Container for the cards */
+.card-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap in rows */
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px; /* Adds consistent spacing between cards */
+    padding: 20px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Individual card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8); /* Modern gradient background */
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+    padding: 20px;
+    color: #fff;
+}
+
+.card.close{
+    background: rgba(255, 0, 102, 0.51);
+}
+/* Header styling within cards */
+.card h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Light border for separation */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adds subtle text shadow */
+}
+
+/* Text container inside cards */
+.card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds spacing between time and offset */
+}
+
+/* Paragraph styling for time and offset */
+.card .text > p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+    margin: 0; /* Removes default margins */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 200px; /* Adjust card size for smaller screens */
+        height: 250px;
+    }
+
+    .card h1 {
+        font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .card .text > p {
+        font-size: 2rem; /* Adjust text size for readability */
+    }
+}
+
+.selection{
+    margin-top: 2rem;
+}
+select{
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 20%;
+    background: rgba(106, 255, 0, 0.448);
+}
